@@ -17,10 +17,10 @@
       register: key_out
 
 
-    - name: Save private key into file bastion-key.pem
+    - name: Save private key into file bastion-key.ppk
       copy:
         content: "{{key_out.key.private_key}}"
-        dest: "./bastion-key.pem"
+        dest: "./bastion-key.ppk"
         mode: 0600
       when: key_out.changed
 
