@@ -1,1 +1,5 @@
-*.ppk, *.ppm
+*.ppk
+*.ppm
+*.sql
+*.war
+
