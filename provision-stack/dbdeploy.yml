@@ -2,6 +2,7 @@
 - name: Deploy SQL file on accounts db
   hosts: dbsrvgrp
   gather_facts: no
+  become: yes
   tasks:
     - name: Copy SQL to dbsrv
       copy:
